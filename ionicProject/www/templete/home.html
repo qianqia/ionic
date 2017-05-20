@@ -1,0 +1,23 @@
+<ion-view view-title='首页'>
+	<ion-nav-buttons><button class="button button-clear" menu-toggle="left"><i class="icon ion-navicon"></i></button></ion-nav-buttons>
+	<ion-content ng-controller="a">
+		<ion-refresher
+			    pulling-text="Loading..."
+			    on-refresh="doRefresh()"
+			    
+			    >
+		</ion-refresher>
+		<div class="list" ng-repeat="item in arr" style="position: relative; top:20px">
+		    <a class="item item-avatar" href="#/tabs/home/{{$index}}" style="border:none;">
+		      <img src="{{item.src}}">
+		      <h2 style="margin-top: 10px;font-weight: 700;">{{item.title}}</h2>
+		      
+		      <i class="icon ion-ios-arrow-right" style="position:absolute;right:20px;top:25px;font-size: 20px;color:cadetblue;"></i>
+		    </a>
+		</div>
+		
+		
+		
+		
+	</ion-content>
+</ion-view>

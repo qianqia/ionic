@@ -1,0 +1,27 @@
+<ion-view view-title='智优招聘商城'>
+	
+	
+	<ion-content>
+		
+		 <h1 class="title" style="font-size: 20px;text-align: center;margin-top: 15px;color: blue;">{{title}}</h1>
+		
+		<ion-list>
+			<ion-item ng-repeat="item in arr" style='border:none' >
+				 <h1 class="title" style="font-size: 20px;">{{item.rtitle}}</h1>
+				 <p style="white-space:pre-wrap;color:#888">{{item.con}}</p>
+			</ion-item>
+		</ion-list>
+		<p style="height: 30px;font-size: 18px;line-height: 30px;text-align: center;background: #f1f1f1;margin: 10px 60px;border-radius: 5px;color:deeppink">{{title}}报名</p>
+		<ion-list >
+			<ion-item ng-repeat="item in arr" >
+				 <h1 class="title" style="font-size: 18px; float:left;">{{item.rtitle}}</h1>
+				 <input type="radio"  style="float: right;margin-top: 8px; margin-right: 40px; "  name='work'/ >
+			</ion-item>
+		</ion-list>
+		<button class="button button-balanced button-assertive" style="width: 100px;margin: 10px auto; display: block;min-height: 0;" ng-click="tap()">
+		  提交
+		</button>
+		
+	</ion-content>
+	
+</ion-view>

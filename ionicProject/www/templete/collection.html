@@ -1,0 +1,21 @@
+<ion-view view-title='收藏'>
+	<ion-content ng-controller="a">
+		<ion-refresher
+			    pulling-text="Loading..."
+			    on-refresh="doRefresh()"
+			    
+			    >
+		</ion-refresher>
+		<ion-list >
+			<ion-item  ng-repeat="item in string">
+				<a class="item item-avatar" href="#/tabs/collection/{{$index}}" style="border:none;" >
+					<img src="{{item.src}}">
+			      	<h2 style="margin-top: 10px;font-weight: 700;">{{item.title}}</h2>
+			   		
+				</a>
+			</ion-item>
+		</ion-list>
+		
+		<ion-nav-view name='tabs-shoucang'></ion-nav-view>
+	</ion-content>
+</ion-view>

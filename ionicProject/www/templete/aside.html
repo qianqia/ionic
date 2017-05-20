@@ -1,0 +1,10 @@
+<ion-view view-title='收藏'>
+	<h1 class="title" style="font-size: 20px;text-align: center;margin-top: 15px;color: blue;">{{b}}</h1>
+	
+	<ion-list>
+		<ion-item ng-repeat="item in a" style='border:none' >
+			 <h1 class="title" style="font-size: 20px;">{{item.rtitle}}</h1>
+			 <p style="white-space:pre-wrap;color:#888">{{item.con}}</p>
+		</ion-item>
+	</ion-list>
+</ion-view>

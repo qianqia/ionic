@@ -1,0 +1,16 @@
+<ion-view view-title='收藏'>
+	<ion-content >
+		<ion-list >
+							
+			<ion-item  ng-repeat="item in string">
+					<a class="item item-avatar" href="#/tabs/aside/{{$index}}" style="border:none;" menu-toggle>
+						<img src="{{item.src}}">
+			      <h2 style="margin-top: 10px;font-weight: 700;">{{item.title}}</h2>
+			      
+			      <i class="icon ion-ios-arrow-right" style="position:absolute;right:20px;top:25px;font-size: 20px;color:cadetblue;"></i>
+					</a>
+			</ion-item>
+			
+	</ion-list>
+	</ion-content>
+</ion-view>
